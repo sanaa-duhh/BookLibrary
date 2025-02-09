@@ -1,0 +1,177 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #EDEBF5, #C4C9F2);
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: black !important;  
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .dark-mode .sidebar ul li a {
+    color: #EDEBF5 !important; 
+  }
+  
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.book-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    background: linear-gradient(135deg, #6B73FF, #000DFF);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #000DFF, #6B73FF);
+}
+
+.dark-mode {
+    background: #121212 !important;
+    color: #ffffff !important;
+  }
+  
+  .dark-mode .sidebar {
+    background: rgba(20, 20, 40, 0.8) !important;
+  }
+  
+  .dark-mode .book-card {
+    background: rgba(50, 50, 70, 0.8) !important;
+    border-color: #7091E6;
+  }
+  
+  
+
+  .dark-mode .progress-bar {
+    background: #444 !important;
+  }
+  
+  .dark-mode .progress {
+    background: #4a90e2 !important;
+  }
+  
+
+  .progress-bar {
+    background: #e0e0e0; 
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+    width: 100%;
+    margin-top: 8px;
+    width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin: 10px 0;
+  }
+  
+  .progress {
+    background: #4CAF50; 
+    height: 100%;
+    width: 50%; 
+    transition: width 0.5s ease-in-out;
+  }
+
+  
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin: 10px 0; 
+  }
+  
+  .progress {
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .remove-btn {
+    margin-top: 10px; 
+    padding: 8px 12px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c9302c;
+  }
+  

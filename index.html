@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Organizer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    
+    <div class="sidebar">
+      <ul>
+        <li><a href="#" id="home-link">Home</a></li>
+        <li><a href="#" id="library-link">Library</a></li>
+      </ul>
+      <div class="dark-mode-toggle">
+        <label for="dark-mode">Dark Mode</label>
+        <input type="checkbox" id="dark-mode">
+      </div>
+    </div>
+
+     
+    <div class="main-content">
+        
+      <div id="home">
+        <h1>Home</h1>
+        <input type="text" id="search-bar" placeholder="Search for books...">
+        <select id="genre-filter">
+          <option value="all">All Genres</option>
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-Fiction</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="sci-fi">Sci-Fi</option>
+        </select>
+        <div id="book-list" class="row"></div>
+      </div>
+
+       
+      <div id="library" style="display: none;">
+        <h1>Library</h1>
+        <div id="library-list" class="row"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
